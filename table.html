@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Table example</title>
+    </head>        
+    <style>
+        html, body, table, td, tr {
+            padding: 0;
+            margin: 0;            
+        }
+
+        html, body {
+            height: 100vh;
+        }
+
+        #board img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .textstyle {
+            padding: 10px; 
+            vertical-align: top; 
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;            
+        }
+    </style>
+    <body>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+            <tr>
+                <td width="25%" height="100%">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+                        <tr>
+                            <td height="10%" style="padding: 10px; background: purple; color: white;">
+                                <h1>Mega multiplayer festival gamer</h1>                                    
+                            </td>
+                        </tr>
+                        <tr>                                    
+                            <td class="textstyle" height="65%" style="background: yellow; color: black;">
+                                # of games in database: 842,056<br/>
+                                Years covered: 1475 to 2017 (543 years)<br/>
+                                White wins 317,158 games (37.66%)<br/>
+                                Black wins 235,098 games (27.92%)<br/>
+                                289,787 games are drawn (34.41%)<br/>
+                                Average # of moves per game: 40.64<br/>
+                                Average Elo rating of rated players: 2192<br/>
+                                # of games with annotation: 2,266 (0.27%) <br/>
+                                # of games with kibitzing: 135,239 (16.06%) <br/>
+                                # of kibitzes in total: 3,994,666<br/>
+                                # of registered users: 237,356<br/>
+                                # of users registered in last 30 days: 3,629 (1.53%)<br/>
+                                # of registered users seen in last 90 days: 9,694 (4.08%)<br/>                                
+                            </td>
+                        </tr>
+                        <tr>               
+                            <td class="textstyle" height="25%" style="background: green; color: white;">
+                                Mandolfo vs Kolisch, 1859 0-1<br/>
+                                Shumov vs Kolisch, 1862 0-1<br/>
+                                Kolisch vs Anderssen, 1861 1-0<br/>
+                                Duke Karl / Count Casabianca vs Kolisch, 1859 0-1<br/>
+                                Kolisch vs Loyd, 1867 1-0<br/>
+                                Kolisch vs Anderssen, 1861 1-0<br/>
+                                Kolisch vs Geake, 1860 1-0<br/>
+                                F Deacon vs Kolisch, 1860 0-1<br/>
+                                Kolisch vs R Steel, 1861 1-0<br/>
+                                Kolisch vs Gastein, 1859 1-0<br/>                                
+                            </td>
+                        </tr>
+                    </table>                    
+                </td>
+                <td width="75%" height="100%">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+                        <tr>
+                            <td height="75%" id="board">
+                                <img src="chess.jpg" />                                    
+                            </td>
+                        </tr>
+                        <tr>                                                                    
+                            <td  height="25%" style="padding: 10px; text-align:center">
+                                <img src="controller.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Flex example</title>
+    </head>
+    <style>
+        html,body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        #outer-container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #info-container {
+            display: flex;
+            flex: 3;
+            flex-direction: column;
+        }
+
+        #play-container {
+            display: flex;
+            flex: 9;
+            flex-direction: column;
+        }
+
+        #title { 
+            flex: 1;
+            padding: 10px;                
+            background: purple;
+            color: white;
+        }
+        #score { 
+            flex: 3;
+            padding: 10px;                
+            background: green;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+        }
+        #stats { 
+            flex: 8;
+            padding: 10px;                
+            background: yellow;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+        }
+        #board {
+            flex: 9;
+        }
+        #board img {
+            width: 100%;
+            height: 96%;
+        }
+        #controls { 
+            flex: 3;
+            padding: 10px;
+            text-align: center;              
+        }        
+    </style>
+    <body>
+        <div id="outer-container">
+            <div id="info-container">
+                <div id="title">
+                    <h1>Mega multiplayer festival gamer</h1>
+                </div>
+                <div id="stats">
+                        # of games in database: 842,056<br/>
+                        Years covered: 1475 to 2017 (543 years)<br/>
+                        White wins 317,158 games (37.66%)<br/>
+                        Black wins 235,098 games (27.92%)<br/>
+                        289,787 games are drawn (34.41%)<br/>
+                        Average # of moves per game: 40.64<br/>
+                        Average Elo rating of rated players: 2192<br/>
+                        # of games with annotation: 2,266 (0.27%) <br/>
+                        # of games with kibitzing: 135,239 (16.06%) <br/>
+                        # of kibitzes in total: 3,994,666<br/>
+                        # of registered users: 237,356<br/>
+                        # of users registered in last 30 days: 3,629 (1.53%)<br/>
+                        # of registered users seen in last 90 days: 9,694 (4.08%)<br/>
+                </div>
+                <div id="score">
+                    Mandolfo vs Kolisch, 1859 0-1<br/>
+                    Shumov vs Kolisch, 1862 0-1<br/>
+                    Kolisch vs Anderssen, 1861 1-0<br/>
+                    Duke Karl / Count Casabianca vs Kolisch, 1859 0-1<br/>
+                    Kolisch vs Loyd, 1867 1-0<br/>
+                    Kolisch vs Anderssen, 1861 1-0<br/>
+                    Kolisch vs Geake, 1860 1-0<br/>
+                    F Deacon vs Kolisch, 1860 0-1<br/>
+                    Kolisch vs R Steel, 1861 1-0<br/>
+                    Kolisch vs Gastein, 1859 1-0<br/>
+                </div>
+            </div>
+            <div id="play-container">
+                <div id="board">
+                    <img src="chess.jpg" />
+                </div>
+                <div id="controls">
+                    <img src="controller.png" />
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>
